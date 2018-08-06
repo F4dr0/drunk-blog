@@ -22,6 +22,7 @@ test:
 
 production:
   <<: *default
-  database: da11rv3rg4ags6
-  user: ipehybtibqougk
-  password: d9e6635643c73f3e832adb2bedcc96a89bd2ad4e2ed06e8659cdb5b0d0713153
+  database: dcvi8c38e8heqa
+  user: atybghikwbrbeu
+  password: e8be9265dc5d04cdbea14950ece04c9a4e61febcccc471328949cb0c7e156bbf
+
