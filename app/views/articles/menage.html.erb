@@ -19,10 +19,17 @@
     <strong>Comment:</strong>
     <%= comment.body %>
   </p>
+
+  <p>
+    <%=  link_to  'Destroy Comment', [comment.article, comment],
+                  method: :delete %>
+  </p>
   <br>
 <%end %>
 <h2>new comment</h2>
-  <%= render 'comments/form' %>
+<%= render 'comments/form' %>
 
-<%= link_to 'Back', controller:'articles' %>
-<%= link_to 'Menage', article_menage_path(@article) %>
+<%= link_to 'Back', article_path(@article) %>
+<%= link_to 'Edit', edit_article_path(@article) %>
+<%= link_to 'Destroy', article_path(@article),
+            method: :delete %>

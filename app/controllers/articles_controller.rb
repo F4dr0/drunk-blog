@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-
+  http_basic_authenticate_with name: "admin123", password: "admin", only: :menage
   def index
     @article = Article.all
   end
@@ -8,6 +8,9 @@ class ArticlesController < ApplicationController
   end
   def edit
     @article = Article.find(params[:id])
+  end
+  def menage
+    @article = Article.find(params[:article_id])
   end
 
   def create
